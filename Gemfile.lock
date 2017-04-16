@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-tactile (0.0.3)
+    jekyll-theme-midnight (0.0.4)
       jekyll (~> 3.3)
 
 GEM
@@ -47,10 +47,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  jekyll-theme-tactile!
-
-RUBY VERSION
-   ruby 2.2.4p230
+  jekyll-theme-midnight!
 
 BUNDLED WITH
    1.14.6

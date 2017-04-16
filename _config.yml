@@ -1,11 +1,10 @@
-title: "Portfolio: Brian Tria"
-description: A collection of simple projects made with Unity.
+title: Brian's Portfolio
+description: A collection of code snippets and mini projects (WebGL, Android, or Windows PC).
+
 show_downloads: false
-google_analytics:
-theme: jekyll-theme-tactile
-highlighter: rouge
-# gems:
-#   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+
+# Google Analytics Tracking ID 
+# google_analytics:
+
+theme: jekyll-theme-midnight
+permalink: /:categories/:title/
