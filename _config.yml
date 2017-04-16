@@ -1,10 +1,13 @@
 title: Brian's Portfolio
 description: A collection of code snippets and mini projects (WebGL, Android, or Windows PC).
 
+# Build settings
 show_downloads: false
+theme: jekyll-theme-midnight
+permalink: /:categories/:title/
 
 # Google Analytics Tracking ID 
 # google_analytics:
 
-theme: jekyll-theme-midnight
-permalink: /:categories/:title/
+# markdown: kramdown
+highlighter: rouge
