@@ -1,0 +1,11 @@
+page_list: Pages
+pages:
+
+- title: Home
+  url  : index.md
+
+- title: About
+  url  : about.md
+
+- title: Projects
+  url  : projects.md
