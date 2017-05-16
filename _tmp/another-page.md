@@ -1,4 +1,5 @@
 ---
+title: Another Page
 layout: default
 ---
 

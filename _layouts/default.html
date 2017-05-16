@@ -27,11 +27,10 @@
             <li class="title">DOWNLOADS</li>
           {% endif %}
           -->
-          <!-- EDIT FOR NAVIGATION LINKS
-          {% for item in site.data.pages %}
+          {% for item in site.main_pages %}
             <li class="title"><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
           {% endfor %}
-          -->
+          <li class="title"><a href="{{ site.url }}" alt="home">Home</a></li>
         </nav>
       </div><!-- end header -->
 

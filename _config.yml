@@ -7,4 +7,10 @@ show_downloads: false
 # google_analytics:
 
 theme: jekyll-theme-midnight
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
+
+# Main Pages
+collections:
+  main_pages:
+    output: true
+    permalink: /:name
