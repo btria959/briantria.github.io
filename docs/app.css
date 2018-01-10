@@ -23,9 +23,3 @@
   content: "|";
   padding-right: 0.3em;
 }
-
-footer {
-  width: 100%;
-  bottom: 0;
-  position: fixed;
-}

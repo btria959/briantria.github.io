@@ -1,8 +1,8 @@
 {
   "name": "briantria.github.io",
-  "description": "Brian's Portfolio | Software Engineer",
+  "description": "Online Portfolio",
   "version": "0.0.0",
-  "homepage": "https://github.com/briantria/briantria.github.io",
+  "homepage": "https://briantria.github.io/",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -10,19 +10,6 @@
     "angular-route": "~1.5.0",
     "angular-loader": "~1.5.0",
     "angular-mocks": "~1.5.0",
-    "html5-boilerplate": "^5.3.0",
-    "three.js": "threejs#*"
-  },
-  "authors": [
-    "BrianTria <btria959@gmail.com>"
-  ],
-  "main": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "app/bower_components",
-    "test",
-    "tests"
-  ]
+    "html5-boilerplate": "^5.3.0"
+  }
 }
