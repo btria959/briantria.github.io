@@ -1,5 +1,11 @@
 /* app css stylesheet */
 
+body {
+  margin: 0.25in;
+  font-size: 11pt;
+  font-family: Tahoma, Verdana, sans-serif
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -22,4 +28,8 @@
 .menu > li + li:before {
   content: "|";
   padding-right: 0.3em;
+}
+
+.title {
+  font-size: 24pt
 }
