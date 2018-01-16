@@ -21,10 +21,10 @@ script:
 
 deploy:
   provider: pages
-  skip_cleanup: true
+  skip-cleanup: true
   keep-history: true
-  github_token: $GITHUB_TOKEN
+  github-token: $GITHUB_TOKEN
   target-branch: master
-  local_dir: dist
+  local-dir: dist
   on:
     branch: angular
