@@ -1,27 +1,19 @@
 <div class="section">
   <div class="section-title">Employment History</div>
 
-  <!-- <div class="entry" *ngFor="let project of projects">
-    <div class="entry-title">{{project.name}}</div>
-    <ul>
-      <li>{{project.role}}</li>
-      <li *ngFor="let link of project.links">
-        {{link.platform}} : <a href={{link.url}}>{{link.url}}</a>
-      </li>
-    </ul>
-  </div> -->
+  <div class="entry" *ngFor="let employment of employments">
+    <div class="entry-title">{{employment.employer}}</div>
+    <div>{{employment.title}}</div>
+    <div>{{employment.dateStart}} - {{employment.dateEnd}}</div>
+  </div>
 </div>
 
 <div class="section">
   <div class="section-title">Voluntary Experience</div>
 
-  <!-- <div class="entry" *ngFor="let project of projects">
-    <div class="entry-title">{{project.name}}</div>
-    <ul>
-      <li>{{project.role}}</li>
-      <li *ngFor="let link of project.links">
-        {{link.platform}} : <a href={{link.url}}>{{link.url}}</a>
-      </li>
-    </ul>
-  </div> -->
+  <div class="entry" *ngFor="let voluntary of voluntaries">
+    <div class="entry-title">{{voluntary.employer}}</div>
+    <div>{{voluntary.title}}</div>
+    <div>{{voluntary.dateStart}} - {{voluntary.dateEnd}}</div>
+  </div>
 </div>

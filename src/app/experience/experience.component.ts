@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EMPLOYMENTS, VOLUNTARIES, Experience } from '../_object-classes/experience'
 
 @Component({
   selector: 'app-experience',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
+  employments: Experience[] = EMPLOYMENTS;
+  voluntaries: Experience[] = VOLUNTARIES;
 
   constructor() { }
 
