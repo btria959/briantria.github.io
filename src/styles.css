@@ -5,6 +5,14 @@ body {
     font-size: 11pt
 }
 
+a img {
+    border: 0 none;
+}
+
+.image-link {
+    text-decoration: none;
+}
+
 .title {
     font-size: 24pt;
     font-weight: bold
