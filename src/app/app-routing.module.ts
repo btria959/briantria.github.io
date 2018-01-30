@@ -6,15 +6,28 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 
-const routes: Routes = [
-  {path: "", component: AboutMeComponent},
-  {path: "projects", component: ProjectsComponent},
-  {path: "experience", component: ExperienceComponent},
-  {path: "education", component: EducationComponent}
+export const ROUTES: Routes = [
+  {
+    path: "",
+    component: AboutMeComponent,
+    data: {title: 'Home'}
+  },
+  {
+    path: "projects",
+    component: ProjectsComponent,
+    data: {title: 'Projects'}},
+  {
+    path: "experience",
+    component: ExperienceComponent,
+    data: {title: 'Experience'}},
+  {
+    path: "education",
+    component: EducationComponent,
+    data: {title: 'Education'}}
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(ROUTES) ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule { }

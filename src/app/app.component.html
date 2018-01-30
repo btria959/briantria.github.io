@@ -1,8 +1,18 @@
 <mat-toolbar color="primary">
-  <span class="title">BRIAN TRIA</span>
-  <span class="example-spacer"></span>
-  <span class="subtitle"> | Software Engineer</span>
+  <span>BRIAN TRIA | Software Engineer</span>
 </mat-toolbar>
+
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+    *ngFor="let link of navLinks"
+    [routerLink]="link.path"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    {{link.data.title}}
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
 
 <div>
   (+971) 54 422 8791 | 
@@ -26,14 +36,3 @@
     <img src="assets/twitter.png" alt="twitter">
   </a>
 </div>
-
-<hr>
-
-<nav>
-  <a routerLink="/">Home</a>
-  <a routerLink="/projects">Projects</a>
-  <a routerLink="/experience">Experience</a>
-  <a routerLink="/education">Education</a>
-</nav>
-
-<router-outlet></router-outlet>
