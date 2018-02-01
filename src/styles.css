@@ -4,9 +4,31 @@
 body {
     margin: 0px;
     padding: 0px;
+
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11pt */
+}
+
+#app-wrapper {
+    min-height: 100vh;
+    margin: 0 auto -10em;
+}
+
+footer, #push {
+    height: 10em;
+}
+
+/* main {
+    
+} */
+
+/************ OLD STYLE **********************/
+/* body {
+    margin: 0px;
+    padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11pt
-}
+} */
 
 a img {
     border: 0 none;

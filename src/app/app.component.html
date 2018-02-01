@@ -1,41 +1,45 @@
-<mat-toolbar color="primary">
-  <span>BRIAN TRIA | Software Engineer</span>
-</mat-toolbar>
+<div id="app-wrapper">
+  <mat-toolbar color="primary">
+    <span>BRIAN TRIA | Software Engineer</span>
+  </mat-toolbar>
 
-<nav mat-tab-nav-bar>
-  <a mat-tab-link
-    *ngFor="let link of navLinks"
-    [routerLink]="link.path"
-    routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
-    {{link.data.title}}
-  </a>
-</nav>
+  <nav mat-tab-nav-bar>
+    <a mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.path"
+      routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive">
+      {{link.data.title}}
+    </a>
+  </nav>
 
-<router-outlet></router-outlet>
-
-<hr>
-
-<div align="center">
-  (+971) 54 422 8791
-  <br>
-  <a href="mailto:brian.tria.se@gmail.com">brian.tria.se@gmail.com</a>
+  <router-outlet></router-outlet>
+  <div id="push"></div>
 </div>
 
-<div align="center" style="margin-top: 5px;">
-  <!-- TODO:
-    - link to FB page <briantria.github.io>
-  -->
+<footer>
+  <mat-divider></mat-divider>
+  <div align="center" style="margin-top: 5px;">
+    (+971) 54 422 8791
+    <br>
+    <a href="mailto:brian.tria.se@gmail.com">brian.tria.se@gmail.com</a>
+  </div>
 
-  <a class="image-link" href="https://github.com/briantria/briantria.github.io/tree/angular">
-    <img src="assets/github.png" alt="github">
-  </a>
+  <div align="center" style="margin-top: 5px;">
+    <!-- TODO:
+      - link to FB page <briantria.github.io>
+    -->
 
-  <a class="image-link" href="https://www.linkedin.com/in/briantria">
-    <img src="assets/linkedin.png" alt="linkedin">
-  </a>
+    <a class="image-link" href="https://github.com/briantria/briantria.github.io/tree/angular">
+      <img src="assets/github.png" alt="github">
+    </a>
 
-  <a class="image-link" href="https://twitter.com/briangtria">
-    <img src="assets/twitter.png" alt="twitter">
-  </a>
-</div>
+    <a class="image-link" href="https://www.linkedin.com/in/briantria">
+      <img src="assets/linkedin.png" alt="linkedin">
+    </a>
+
+    <a class="image-link" href="https://twitter.com/briangtria">
+      <img src="assets/twitter.png" alt="twitter">
+    </a>
+  </div>
+</footer>
