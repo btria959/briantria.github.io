@@ -7,10 +7,15 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 
 export const ROUTES: Routes = [
+  // {
+  //   path: "",
+  //   redirectTo: "about",
+  //   pathMatch: "full"
+  // },
   {
     path: "",
     component: AboutMeComponent,
-    data: {title: 'Home'}
+    data: {title: 'About'}
   },
   {
     path: "projects",

@@ -14,13 +14,9 @@ body {
     margin: 0 auto -10em;
 }
 
-footer, #push {
+footer, .allowance {
     height: 10em;
 }
-
-/* main {
-    
-} */
 
 /************ OLD STYLE **********************/
 /* body {

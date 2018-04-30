@@ -1,27 +1,29 @@
 <div id="app-wrapper">
-  <mat-toolbar color="primary">
-    <span>BRIAN TRIA | Software Engineer</span>
-  </mat-toolbar>
+  <div class="header">
+    <mat-toolbar color="primary">
+      <span>BRIAN TRIA | Software Engineer</span>
+    </mat-toolbar>
 
-  <nav mat-tab-nav-bar>
-    <a mat-tab-link
-      *ngFor="let link of navLinks"
-      [routerLink]="link.path"
-      routerLinkActive #rla="routerLinkActive"
-      [active]="rla.isActive">
-      {{link.data.title}}
-    </a>
-  </nav>
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link
+        *ngFor="let link of navLinks"
+        [routerLink]="link.path"
+        routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+        {{link.data.title}}
+      </a>
+    </nav>
+  </div>
 
-  <router-outlet></router-outlet>
-  <div id="push"></div>
+  <router-outlet class="content"></router-outlet>
+  <div class="allowance"></div>
 </div>
 
 <footer>
   <mat-divider></mat-divider>
   <div align="center" style="margin-top: 5px;">
-    (+971) 54 422 8791
-    <br>
+    <!-- (+971) 54 422 8791
+    <br> -->
     <a href="mailto:brian.tria.se@gmail.com">brian.tria.se@gmail.com</a>
   </div>
 
