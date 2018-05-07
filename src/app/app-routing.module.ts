@@ -7,32 +7,39 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 
 export const ROUTES: Routes = [
-  // {
-  //   path: "",
-  //   redirectTo: "about",
-  //   pathMatch: "full"
-  // },
   {
-    path: "",
+    path: "about",
     component: AboutMeComponent,
     data: {title: 'About'}
   },
   {
     path: "projects",
     component: ProjectsComponent,
-    data: {title: 'Projects'}},
+    data: {title: 'Projects'}
+  },
   {
     path: "experience",
     component: ExperienceComponent,
-    data: {title: 'Experience'}},
+    data: {title: 'Experience'}
+  },
   {
     path: "education",
     component: EducationComponent,
-    data: {title: 'Education'}}
+    data: {title: 'Education'}
+  }
+  // ,{
+  //   path: "**",
+  //   component: AboutMeComponent
+  // }
+  // ,{
+  //   path: "**",
+  //   redirectTo: "about",
+  //   pathMatch: "full"
+  // }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(ROUTES) ],
+  imports: [ RouterModule.forRoot(ROUTES, {useHash: true}) ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule { }
