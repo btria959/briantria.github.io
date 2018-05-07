@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build.prod": "ng build --aot --prod --progress false --base-href \"https://briantria.github.io/\"",
+    "build.prod": "ng build --aot --prod --progress false --base-href \"/\"",
     "serve-host": "ng serve --host 192.168.1.100"
   },
   "private": true,
@@ -27,6 +27,7 @@
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "hammerjs": "^2.0.8",
+    "npm": "^6.0.0",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
