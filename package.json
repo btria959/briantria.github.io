@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build.prod": "ng build --aot --prod --progress false --base-href \"/\"",
-    "serve-host": "ng serve --host 192.168.1.100"
+    "serve-host": "ng serve --host 192.168.1.198"
   },
   "private": true,
   "dependencies": {

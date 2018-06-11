@@ -31,15 +31,16 @@ export const ROUTES: Routes = [
   //   path: "**",
   //   component: AboutMeComponent
   // }
-  // ,{
-  //   path: "**",
-  //   redirectTo: "about",
-  //   pathMatch: "full"
-  // }
+  ,{
+    path: "",
+    redirectTo: "/about",
+    pathMatch: "full"
+  }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(ROUTES, {useHash: true}) ],
+  //imports: [ RouterModule.forRoot(ROUTES, {useHash: true}) ],
+  imports: [ RouterModule.forRoot(ROUTES) ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule { }
